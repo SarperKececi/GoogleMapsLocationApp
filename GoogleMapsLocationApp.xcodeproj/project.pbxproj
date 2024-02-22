@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2A6C202B86C93900F4A501 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2A6C1F2B86C93900F4A501 /* DetailViewController.swift */; };
 		9F70A6802B854BE1009E90AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A67F2B854BE1009E90AE /* AppDelegate.swift */; };
 		9F70A6822B854BE1009E90AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A6812B854BE1009E90AE /* SceneDelegate.swift */; };
 		9F70A6842B854BE1009E90AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A6832B854BE1009E90AE /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		9F70A6972B854BE2009E90AE /* GoogleMapsLocationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A6962B854BE2009E90AE /* GoogleMapsLocationAppTests.swift */; };
 		9F70A6A12B854BE2009E90AE /* GoogleMapsLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A6A02B854BE2009E90AE /* GoogleMapsLocationAppUITests.swift */; };
 		9F70A6A32B854BE2009E90AE /* GoogleMapsLocationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70A6A22B854BE2009E90AE /* GoogleMapsLocationAppUITestsLaunchTests.swift */; };
+		9FC726AE2B863D67007D6502 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC726AD2B863D67007D6502 /* PlacesViewController.swift */; };
+		9FC726B12B863F95007D6502 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC726B02B863F95007D6502 /* PlaceAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F2A6C1F2B86C93900F4A501 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9F70A67C2B854BE1009E90AE /* GoogleMapsLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapsLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F70A67F2B854BE1009E90AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F70A6812B854BE1009E90AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		9F70A69C2B854BE2009E90AE /* GoogleMapsLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F70A6A02B854BE2009E90AE /* GoogleMapsLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsLocationAppUITests.swift; sourceTree = "<group>"; };
 		9F70A6A22B854BE2009E90AE /* GoogleMapsLocationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsLocationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FC726AD2B863D67007D6502 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		9FC726B02B863F95007D6502 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,14 @@
 		9F70A67E2B854BE1009E90AE /* GoogleMapsLocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				9FC726AF2B863D6E007D6502 /* Controllers */,
 				9F70A67F2B854BE1009E90AE /* AppDelegate.swift */,
 				9F70A6812B854BE1009E90AE /* SceneDelegate.swift */,
-				9F70A6832B854BE1009E90AE /* ViewController.swift */,
 				9F70A6852B854BE1009E90AE /* Main.storyboard */,
 				9F70A6882B854BE2009E90AE /* Assets.xcassets */,
 				9F70A68A2B854BE2009E90AE /* LaunchScreen.storyboard */,
 				9F70A68D2B854BE2009E90AE /* Info.plist */,
+				9FC726B02B863F95007D6502 /* PlaceAnnotation.swift */,
 			);
 			path = GoogleMapsLocationApp;
 			sourceTree = "<group>";
@@ -125,6 +132,16 @@
 				9F70A6A22B854BE2009E90AE /* GoogleMapsLocationAppUITestsLaunchTests.swift */,
 			);
 			path = GoogleMapsLocationAppUITests;
+			sourceTree = "<group>";
+		};
+		9FC726AF2B863D6E007D6502 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F70A6832B854BE1009E90AE /* ViewController.swift */,
+				9FC726AD2B863D67007D6502 /* PlacesViewController.swift */,
+				9F2A6C1F2B86C93900F4A501 /* DetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC726AE2B863D67007D6502 /* PlacesViewController.swift in Sources */,
 				9F70A6842B854BE1009E90AE /* ViewController.swift in Sources */,
+				9FC726B12B863F95007D6502 /* PlaceAnnotation.swift in Sources */,
+				9F2A6C202B86C93900F4A501 /* DetailViewController.swift in Sources */,
 				9F70A6802B854BE1009E90AE /* AppDelegate.swift in Sources */,
 				9F70A6822B854BE1009E90AE /* SceneDelegate.swift in Sources */,
 			);
@@ -440,9 +460,10 @@
 				DEVELOPMENT_TEAM = NMQPZAU46W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleMapsLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Uygulamamız, size daha iyi hizmet sunabilmek için konumunuzu kullanmak istiyor";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Uygulamamız, size en iyi hizmeti sunabilmemiz için konum bilgilerinizi sürekli ve kullanım anında kullanmak istiyor. Bu sayede size özel etkinlik önerileri, yerel kampanyalar ve hava durumu bilgisi sunabiliriz.\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,9 +489,10 @@
 				DEVELOPMENT_TEAM = NMQPZAU46W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleMapsLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Uygulamamız, size daha iyi hizmet sunabilmek için konumunuzu kullanmak istiyor";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Uygulamamız, size en iyi hizmeti sunabilmemiz için konum bilgilerinizi sürekli ve kullanım anında kullanmak istiyor. Bu sayede size özel etkinlik önerileri, yerel kampanyalar ve hava durumu bilgisi sunabiliriz.\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
